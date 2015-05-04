@@ -1,0 +1,78 @@
+
+html {
+  // @include edit();
+}
+
+section {
+  @include cf();
+}
+
+
+.center-test {
+  border: 1px solid blue;
+  height: 500px;
+}
+article {
+  // @include span(2/3);
+  border: 1px solid purple;
+  // @include vertically-center();
+  @include vertically-align();
+  @include center(40%);
+  padding-bottom: rem(200px);
+  text-align: center;
+
+  hr {
+    @include hr(rgba($black, .2), 15%);
+  }
+
+
+  @include tablet() {
+    @include vertically-align(false);
+  }
+}
+
+aside {
+  // @include span(1/3);
+  border: 1px solid blue;
+  display: none;
+}
+//
+// p {
+//   display: block;
+//   height: 50px;
+//   background-color: $gray-1;
+//   width: 50px;
+//   display: block;
+//   float: left;
+//
+//   &:nth-child(2) {
+//     background-color: $gray-2;
+//   }
+//   &:nth-child(3) {
+//     background-color: $gray-3;
+//   }
+//   &:nth-child(4) {
+//     background-color: $gray-4;
+//   }
+//   &:nth-child(5) {
+//     background-color: $gray-5;
+//   }
+//   &:nth-child(6) {
+//     background-color: $gray-6;
+//   }
+//   &:nth-child(7) {
+//     background-color: $gray-7;
+//   }
+//   &:nth-child(8) {
+//     background-color: $gray-8;
+//   }
+//   &:nth-child(9) {
+//     background-color: $gray-9;
+//   }
+//   &:nth-child(10) {
+//     background-color: $gray-10;
+//   }
+//   &:nth-child(11) {
+//     background-color: $gray-11;
+//   }
+// }

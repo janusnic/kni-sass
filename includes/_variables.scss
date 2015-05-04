@@ -1,0 +1,29 @@
+
+// base font size
+$base-font-size: 16px;  
+$global-border-radius: 3px;
+
+// global spacing
+$spacing: 10px;
+$spacing-double: $spacing * 2;
+$spacing-triple: $spacing * 3;
+$spacing-quad:   $spacing * 4;
+$spacing-quint:  $spacing * 5;
+$spacing-sext:   $spacing * 6;
+$spacing-sept:   $spacing * 7;
+$spacing-oct: 	 $spacing * 8;
+$spacing-half:   $spacing / 2;
+$spacing-third:  $spacing / 3;
+$spacing-fourth: $spacing / 4;
+
+
+// global breaks
+$tiny: 320px;
+$small: 480px;
+$phone: 640px;
+$mobile: 767px; // this is the magic number - db
+$phone-l: 768px;
+$tablet: 960px;
+$tablet-l: 1024px;
+$full: 1080px;
+$desktop: 1280px;

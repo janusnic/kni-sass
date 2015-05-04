@@ -1,0 +1,95 @@
+// todo: look at material design colors
+
+//
+// Colors by name
+//
+// NOTE:  Please do not reference these directly.
+//        For semantic purposes, please reference
+//        a color by its use name below.
+//
+// –––––––––––––––––––––––––––––––––––––––––––
+
+// Grays
+
+// Tweak this to add slight color to the grayscale.if you want flat gray use #888888
+$base-gray: #778486;
+
+$white: #FFFFFF;
+
+$gray-1:  lighten($base-gray, 41.6666%);
+$gray-2:  lighten($base-gray, 33.3333%);
+$gray-3:  lighten($base-gray, 25%);
+$gray-4:  lighten($base-gray, 16.6666%);
+$gray-5:  lighten($base-gray, 8.3333%);
+$gray-6:  $base-gray;
+$gray-7:  darken($base-gray, 8.3333%);
+$gray-8:  darken($base-gray, 16.6666%);
+$gray-9:  darken($base-gray, 25%);
+$gray-10: darken($base-gray, 33.3333%);
+$gray-11: darken($base-gray, 41.6666%);
+
+$black: #000000;
+
+
+// Brand Colors
+
+// Example brand colors - change these per project
+// Note: Do not reference these directly. Call or add to colors by use below.
+
+// Name your colors here: http://chir.ag/projects/name-that-color/
+
+$navy-blue: #1786D4;
+$plum: #9C3A8A;
+
+
+//
+// Colors by use
+// –––––––––––––––––––––––––––––––––––––––––––
+
+// General
+// $color-primary
+// $color-secondary
+// $color-splash
+// $color-alert
+// $color-success
+
+// Backgrounds
+// $main-background
+// $aside-background
+// $reverse-background
+
+//buttons
+$button-primary: $navy-blue;
+$button-secondary: $plum;
+// $primary-button
+// $primary-button-hover
+// $secondary-button
+// $secondary-button-hover
+// $disabled-button
+// $hollow-button
+// $form-button
+// $form-button-hover
+// $outline-button-border
+
+// Type
+// $default-heading
+// $sub-heading
+// $important-heading
+// $index-text
+// $quiet-text
+// $loud-text
+// $color-paragraph
+// $alert-text
+
+// Interactive
+// $nav-link-color
+// $nav-link-hover
+// $nav-reverse-color
+// $nav-reverse-hover
+// $nav-reverse-active
+
+
+// Borders
+// $light-border
+// $medium-border
+// $breadcrumb-seperator

@@ -1,0 +1,67 @@
+//Typogrpahy
+
+.defaultType {
+  font-family: $base-font;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+body, p, a, h1, h2, h3, h4, h5, h6,
+small, em, strong, input, button {
+  @extend .defaultType;
+}
+
+
+// Headings
+// –––––––––––––––––––––––––––––––––––––––––––
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  margin: 1rem 0;
+  font-weight: normal;
+
+  // Remove the margin-top on all :first-child headers
+  // as the padding on the parent *almost* always makes up for it
+  &:first-child {
+    margin-top: 0;
+  }
+  // Header links need to inherit the heading color
+  a {
+    color: inherit;
+  }
+}
+
+// Heading Sizes. Call these anywhere, even on non-heading styles.
+@mixin h1() { @include font-size(64px); }
+@mixin h2() { @include font-size(48px); }
+@mixin h3() { @include font-size(36px); }
+@mixin h4() { @include font-size(28px); }
+@mixin h5() { @include font-size(22px); }
+@mixin h6() { @include font-size(18px); }
+
+h1 {
+ @include h1();
+}
+
+h2 {
+  @include h2();
+}
+
+h3 {
+  @include h3();
+}
+h4 {
+  @include h4();
+}
+h5 {
+  @include h5();
+}
+h6 {
+  @include h6();
+}
+
+// Default type styles
+
+p {
+  line-height: 1.5em;
+}

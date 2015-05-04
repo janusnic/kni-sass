@@ -1,0 +1,25 @@
+{
+  "name": "kni-sass",
+  "version": "0.1.0",
+  "authors": [
+    "dbox <danielbox@gmail.com>"
+  ],
+  "description": "A default sass folder structure for our projects",
+  "main": "style.scss",
+  "keywords": [
+    "sass",
+    "kni"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.kurtnoble.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jeet": "~6.1.2"
+  }
+}

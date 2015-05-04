@@ -1,0 +1,91 @@
+// Function for converting a px based font-size to rem.
+@function rem($size) {
+  $remSize: $size / $base-font-size;
+  //Default font size on html element is 100%, equivalent to 16px;
+  @return #{$remSize}rem;
+}
+
+
+// Vertically align any element
+
+@mixin vertically-align($reset : null) {
+  @if $reset != false {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  } @else {
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+  }
+}
+
+//
+// Dev Mode Mixin
+//
+// Temporarily adds borders to the children,
+// grandchildren, etc of an element during
+// development.
+//
+// http://codepen.io/dbox/pen/dPzZoE
+// ––––––––––––––––––––––––––––––––––––––––––––
+@mixin dev-mode() {> * {  border: 1px solid green;} > * > * {border: 1px solid tomato } > * > * > * { border: 1px solid DeepSkyBlue; } > * > * > * > * { border: 1px solid DeepPink; } > * > * > * > * > * { border: 1px solid MediumSlateBlue;}}
+
+//
+// Sibling Count Mixin
+//
+// http://codepen.io/dbox/pen/JoJEXQ
+// ––––––––––––––––––––––––––––––––––––––––––––
+@mixin sibling-count() {
+  li:first-child:nth-last-child(1) {
+    width: 100%;
+  }
+
+  li:first-child:nth-last-child(2),
+  li:first-child:nth-last-child(2) ~ li {
+    width: 50%;
+  }
+
+  li:first-child:nth-last-child(3),
+  li:first-child:nth-last-child(3) ~ li {
+     width: 33.333333333333%;
+  }
+
+  li:first-child:nth-last-child(4),
+  li:first-child:nth-last-child(4) ~ li {
+    width: 25%;
+  }
+
+  li:first-child:nth-last-child(5),
+  li:first-child:nth-last-child(5) ~ li {
+    width: 20%;
+  }
+
+  li:first-child:nth-last-child(6),
+  li:first-child:nth-last-child(6) ~ li {
+    width: 16.666666666667%;
+  }
+
+  li:first-child:nth-last-child(7),
+  li:first-child:nth-last-child(7) ~ li {
+    width: 14.285714285714%;
+  }
+}
+
+//
+// Table Layout Mixin
+//
+// http://codepen.io/dbox/pen/pvrZZV
+//
+//----------------------------------------
+@mixin tl($layoutType) {
+  display: table;
+  table-layout: $layoutType;  //fixed or auto
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  > * {
+    display: table-cell;
+  }
+}

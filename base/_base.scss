@@ -1,0 +1,33 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+// Utility classes
+.clearfix {
+  @include cf();
+}
+.circle {
+  border-radius: 50%;
+}
+
+nav {
+  ul {
+    @include reset-list();
+  }
+}
+
+// Global responsive container
+
+.container {
+  // max container edge to edge = 1170px
+	@include center(1210px, 20px);
+	// border: 1px solid green;
+
+	@include mobile() {
+		padding: 0 4%
+	}
+}
