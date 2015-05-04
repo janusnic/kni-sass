@@ -15,9 +15,12 @@
 @import "mixins/typography";
 
 // Jeet
-@import 'jeet/settings';
-@import 'jeet/functions';
-@import 'jeet/grid';
+@import 'bower_components/jeet/settings/scss/jeet/settings';
+@import 'bower_components/jeet/settings/scss/jeet/functions';
+@import 'bower_components/jeet/settings/scss/jeet/grid';
+
+// @alex - would importing this one file work?
+// @import 'bower_components/jeet/settings/scss/jeet/index.scss';
 
 // base elements
 @import "base/typography";
