@@ -14,5 +14,10 @@ Jump-start the sass folder setup on projects
 
 ### Installation
 
-- Via Grunt - Alex to write
-- Via Gulp - TBD
+- `bower install kni-sass`
+
+### Grunt setup
+Alex to write
+
+### Gulp setup
+Coming soon
