@@ -3,7 +3,6 @@ Jump-start the sass folder setup on projects
 
 ### Folders
 - **base** - Base styling
-- **bower_components** - Vendor libraries brought in via bower
 - **components** - Add components here ie: buttons, nav, etc
 - **includes** - Various setting files
 - **mixins** - Folder of mixins based on type
