@@ -14,13 +14,15 @@
 @import "mixins/ui";
 @import "mixins/typography";
 
-// Jeet
-@import 'bower_components/jeet/settings/scss/jeet/settings';
-@import 'bower_components/jeet/settings/scss/jeet/functions';
-@import 'bower_components/jeet/settings/scss/jeet/grid';
+// @alex, we need you! Suggestions, help welcomed"
 
-// @alex - would importing this one file work?
-// @import 'bower_components/jeet/settings/scss/jeet/index.scss';
+// Jeet
+@import '../jeet/settings/scss/jeet/settings';
+@import '../jeet/settings/scss/jeet/functions';
+@import '../jeet/settings/scss/jeet/grid';
+
+// would importing this one file work?
+// @import '../jeet/settings/scss/jeet/index.scss';
 
 // base elements
 @import "base/typography";
